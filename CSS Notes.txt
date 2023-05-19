@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+======================================Text=======================================
+
+Text-Color:
+Text-align:
+Text-decoration:
+Text-Transform:
+Text-indent:
+Letter-Spacing:
+Word-Spacing:
+line-height:
+
+
+
+Text-align:
+    center
+	left
+	right
+	justify
+Text-decoration:
+    overline
+	underline
+	line-through
+	none
+Text-Transform
+    uppercase
+	lowercase
+	capitalize
+	
+
+=======================================Links===============================
+
+a:link
+a:visited
+a:hover
+a:active
+
+
+===================================Lists===========================================
+
+
+UnorderdList
+OrderdList
+DefinitionList
+
+	list-style-type:
+	         sqaue
+			 upper-roman
+	list-style-position
+	        inside
+			outside
+	list-style-image:url("sathya.jpg");
+	
+	
+	
+shorthand:
+----------
+	
+ list-style: square inside url("images/bullet.png");
+ 
+ 
+ 

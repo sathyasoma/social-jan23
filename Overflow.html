@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example of CSS overflow property</title>
+  <style>
+      div {
+          width: 150px;
+          height: 150px;
+          border: 1px solid #cccccc;
+      }
+      div.scroll {            
+          overflow: scroll;
+		  border: 2p solid red;
+      }
+      div.hidden {
+          overflow: hidden;
+		  border: 2px solid red;
+      }
+	  
+	  div.visible{
+	     overflow:visible;
+		 border: 2px solid red;
+	  }
+	  div.auto{
+	     overflow:auto;
+		 border: 2px solid red;
+	  }
+  </style>
+</head>
+<body>
+  <h1>Play with the size of div boxes to see how it works: propertes: hidden,scroll,auto,visible</h1>
+  
+   <h2>overflow:hidden</h2>
+  <div class="hidden">
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+  </div>
+  <h2>overflow:scroll</h2>
+  <div class="scroll">
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+  </div>
+ 
+ <h2>overflow:auto</h2>
+  <div class="auto">
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+	     You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+  </div>
+  
+  
+  <h2>overflow:visible</h2>
+  <div class="visible">
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+      The overflowed content is hidden.
+	     You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+      You can view the overflowed content using scrollbar.
+  </div>
+ 
+</body>
+</html> 
