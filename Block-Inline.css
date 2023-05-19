@@ -1,0 +1,13 @@
+
+
+div{
+	
+	display:block;
+	background-color:brown;
+	font-size:36px;
+	height:200px;
+	width:200px;
+	border:8px solid green;
+	margin:20px;
+	outline:8px solid yellow;
+}

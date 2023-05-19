@@ -1,0 +1,25 @@
+
+
+p::first-line{
+	
+	color:red;
+	font-variant:small-caps;
+}
+
+p::first-letter{
+	
+	color:green;
+	font-size:xx-large;
+}
+
+h1::before{
+	
+	content:url("light.jpg");
+	
+}
+
+img{
+	
+	height:50px;
+	width:50px;
+}
