@@ -1,0 +1,107 @@
+<html>
+<head></head>
+<body>
+
+<script>
+
+//es5 fetures: var keyword
+
+for(var i=0;i<=5;i++){
+
+   document.write(i+"<br>");
+}
+
+document.write("<hr>"+i); //we can access every where
+
+
+//es6 features:
+
+for(let i=0;i<=5;i++){
+
+document.write("<hr>"+i+"<br>");
+}
+
+document.write(i); //we canot acces outside the block
+
+
+//const:  values are fixd: read only (immutable): partial immutable 
+
+
+const pi=3.14;
+console.log(pi);
+
+//pi=78.0;
+
+//by using objects can change the const values 
+document.write("<hr>")
+const person={
+name:"sathya", 
+age:"27"
+}
+document.write(person.name +"<br>");
+
+person.name="soma"
+document.write(person.name+" "+person.age);
+
+//by using arrays values we can modify: const
+
+const colrs=["red","green","yellow"]
+
+document.write(colrs[0]+"<br>");
+
+colrs[0]="pink";
+
+document.write(colrs[0] +"<br>");
+
+//iterating over arrays
+
+let letters=["s","a","t","h","y","a"]
+
+for(let letter of letters){
+document.write(letter+"<br>");
+}
+
+document.write("<hr>");
+
+//iterating array over the string
+
+let myname="sathyaprakash";
+
+for(let name of myname){
+
+document.write(name+"<br>");
+}
+
+//template litters
+
+let str=`you are sleepy
+    becz of heavy breakfast1`;
+	
+	console.log(`${str}`);
+	
+	
+let a=10;
+let b=20;
+
+let result=`the sum of ${a} and ${b} is ${a+b}`;	
+	
+	document.write(result +"<br>");
+	
+
+//function expression
+
+let sum=function(a,b){return a+b}
+  document.write(sum(4,6)+"<br>");	
+	
+//arrow function
+
+let sum1=(a,b)=>a+b;
+document.write(sum1(3,8));
+
+document.write("<hr>")
+
+</script>
+</body>
+
+
+</html>

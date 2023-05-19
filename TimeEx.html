@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<style>
+
+#cl{
+
+background-color:lightblue;
+color:red;
+margin:30px;
+padding:25px;
+display:block;
+}
+
+</style>
+</head>
+<body>
+<script>
+
+var stopId;
+
+function showClock(){
+   
+   var s=new Date();
+   
+   document.getElementById("cl").innerHTML=s.toLocaleTimeString();
+   
+}
+
+function stopTimer(){
+
+   clearInterval(stopId);
+}
+
+
+var stopId=setInterval(showClock,1000);
+</script>
+
+<p>Current Time is:<span id="cl"><span></p>
+<button onclick="stopTimer()">click me</button>
+
+</body>
+</html>

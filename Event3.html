@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+<script>
+
+function valid(){
+//document.formname.fieldname.value;
+
+var uname=document.myform.un.value;
+var pass=document.myform.pdw.value;
+var cpass=document.myform.cpdw.value;
+
+if(uname==null || uname==""){
+
+alert("username is mandetory");
+
+return false;
+}
+else if(pass==null || pass=="" || pass.length<6)
+{
+alert("password is mandetory");
+return false;
+}
+else if(cpass==null || cpass=="" || cpass.length<6)
+{
+alert("confirm passwrd mandetory");
+return false;
+}
+else if(pass!==cpass){
+alert("password not matched");
+return false;
+}
+else{
+alert("login success");
+return true;
+}
+}
+
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return valid()" action="Event2.html">
+Username:<input type="text" name="un"/><br><br>
+Password:<input type="password" name="pdw"/><br><br>
+ConfirmPAssword:<input type="password" name="cpdw"/><br><br>
+<input type="submit" value="submit">
+</form>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+<head></head>
+<body>
+
+
+
+<script>
+
+var x=30;  //global varibale
+
+function localFun(){
+
+var y=40;   //local variable
+
+document.write(x+y);   //70
+document.write("<br>");
+document.write(x);    //30
+}
+
+function  fun1(){
+
+var y=70; //local variable
+
+document.write(x+y);  //100
+document.write("<br>");
+document.write(x);  //30
+
+
+}
+
+localFun();
+fun1();
+
+
+
+</script>
+
+</body>
+
+
+</html>

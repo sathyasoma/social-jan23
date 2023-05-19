@@ -1,0 +1,79 @@
+
+
+
+
+<html>
+
+<head></head>
+<body>
+
+<h1>Date and time</h1>
+
+
+<script>
+
+var d=new Date();
+
+document.write(d);
+
+document.write("<hr>");
+
+var x=new Date(2011,2,23,5,12,45,0);
+
+document.write(x);
+
+document.write("<hr>");
+
+var a=new Date("2022-05-12");
+
+document.write(a);
+
+document.write("<hr>");
+
+document.write(d.toDateString() +" dateString");
+document.write("<hr>");
+document.write(d.toLocaleDateString()+"localstring");
+document.write("<hr>");
+document.write(d.toISOString()+" isoString");
+document.write("<hr>");
+document.write(d.toString()+"toString");
+document.write("<hr>");
+document.write(d.toUTCString()+"UTCsTRING");
+document.write("<hr>");
+document.write(d.getDate() +"today date");
+document.write("<hr>");
+document.write(d.getDay() +"today");
+document.write("<hr>");
+document.write(d.getMonth() +"moth");
+document.write("<hr>");
+document.write(d.getFullYear() +"this year");
+document.write("<hr>");
+document.write(d.getHours() +"   hours");
+document.write("<hr>");
+document.write(d.getMinutes() +"  minues");
+document.write("<hr>");
+document.write(d.getSeconds() +"  Seconds");
+document.write("<hr>");
+document.write(d.getMilliseconds() +"  milli seconds");
+document.write("<hr>");
+document.write(d.getTime() +"Time");
+document.write("<hr>");
+document.write(d.getTimeZoneOffset()+"greenwicmenan time")
+document.write("<hr>");
+//var d=new Date(6547373); ----->
+//document.write(d);
+document.write(d.getFullYear()-2);
+document.write("<hr>");
+d.setMonth(0);
+d.setDate(46);
+d.setHours(5);
+d.setMinutes(34);
+d.setSeconds(54);
+document.write(d);
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+
+<html>
+
+
+<head></head>
+<body>
+
+<button type="button" id="mybtn">click me</button>
+<script>
+
+function hello(){
+
+   alert("hello function is excuted");
+}
+
+function welcome(){
+ alert("welcome function is executed");
+
+}
+
+var btn=document.getElementById("mybtn");
+
+//btn.onclick=hello;
+//btn.onclick=welcome;
+
+btn.addEventListener("click",hello);
+btn.addEventListener("click",welcome);
+
+</script>
+
+</body>
+
+
+</html>

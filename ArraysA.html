@@ -1,0 +1,209 @@
+<html>
+
+
+<head></head>
+<body>
+
+
+<script>
+
+var cars=["innova","creta","maruthi","audi","rangerover"];
+
+var values=[12,67,56,74,23];
+
+var products=["laptop","charger","battery","board","mouse"];
+
+document.write(cars +"<br>");
+
+document.write("****Based on index*****"+"<br>");
+document.write(cars[0]+"<br>");
+document.write(cars[1]+"<br>");
+document.write(cars[2]+"<br>");
+document.write(cars[3]+"<br>");
+document.write(cars[4]+"<br>");
+
+document.write("****array length*****"+"<br>");
+document.write(cars.length);
+
+document.write("<br>");
+
+//for loop 
+document.write("****for  loop*****"+"<br>");
+for(var i=0;i<cars.length;i++){
+
+ document.write(cars[i]+"<br>");
+}
+
+//for of loop
+document.write("****for of loop*****"+"<br>");
+
+
+for(var car of cars){
+
+ document.write(car +"<br>");
+}
+
+//for in loop 
+document.write("****for in loop:mostly objects we use*****"+"<br>");
+
+
+for(var val in cars){
+
+document.write(cars[val]+"<br>");
+}
+
+
+document.write("****insert values into the array;last*****"+"<br>");
+
+cars.push("jaguar");
+
+document.write(cars+"<br>"); //
+cars.pop();
+document.write(cars+"<br>");
+
+document.write("****insert values into the array;front*****"+"<br>");
+
+cars.unshift("tayota");
+document.write(cars+"<br>");
+
+cars.shift();
+
+document.write(cars+"<br>");
+
+
+document.write("****based on index value remove ,insert values*****"+"<br>");
+
+cars.splice(0,1);
+
+document.write(cars+"<br>");
+
+cars.splice(0,1,"bmw","benz");
+document.write(cars+"<br>");
+
+document.write("****based on array values  join method *****"+"<br>");
+document.write(cars+"<br>");
+
+document.write(cars.join()+"<br>");
+document.write(cars.join("")+"<br>");
+document.write(cars.join("-")+"<br>");
+document.write(cars.join(",")+"<br>");
+
+document.write("****based on add two arrays*****"+"<br>");
+
+
+var pens=["reynolds","fair","santoor","cello"];
+
+var items=["mouse","pen","friuts"];
+
+var result=pens.concat(items);
+
+document.write(result+"<br>");
+
+var animals=["dog","cat","monkey","zebra","elephant","lion"];
+
+document.write(animals.indexOf("monkey") +"<br>"); //2
+document.write(animals.indexOf("lion")  +"<br>"); //5
+document.write(animals.indexOf("donkey")  +"<br>"); //undefined-1
+
+document.write("***********find elements based on condition****"+"<br>")
+
+var values=[12,67,56,74,23,58];
+
+
+var result=values.filter(
+
+    function(ele){
+	
+	   return ele>50;
+	}
+);
+
+document.write(result); //56 ,67
+
+
+
+document.write("***********sorting elelements in given array****"+"<br>")
+
+
+var cloths=["silk","cotton","nylon","jute","lenin"];
+
+document.write(cloths +"<br>");
+
+
+var sorted=cloths.sort();
+
+
+document.write(sorted +"<br>");
+
+
+
+document.write("***********NUMBERS sorting elelements in given array : sfter ES6 fEATURE****"+"<br>");
+
+
+var nums=[12,89,34,67,54,90];
+
+var sorted2=nums.sort();
+
+document.write(sorted2); //
+
+document.write("***********NUMBERS sorting elelements in given array: beforeES6 fetures****"+"<br>");
+
+var nums=[12,49,64,67,89,90];
+
+var result=nums.sort(function(a,b){
+    return a-b;
+});
+
+document.write(result); //
+
+
+
+document.write("*********************objects*******************"+"<br>");
+
+var person={
+   
+    name:"keerthi",
+	location:"kochi",
+	age:31,
+	salary:560000,
+	sleeping:function(){document.write("dont sleep")}
+
+}
+
+document.write(person+"<br>"); //
+
+document.write(person.name+" "+person.age+" "+person.location+" "+person.salary+" "+person.sleeping() +"<br>"); //
+
+document.write(person["name"]+"<br>");
+document.write(person["age"]+"<br>");
+
+
+var myperson=person;
+
+myperson.name="mysathya";
+
+document.write(person.name +"<br>"); //
+document.write(myperson.name +"<br>");//
+
+
+person.address="london";
+document.write(person.address);
+
+var name="sathya";
+
+var myname=name;
+
+
+myname="soma";
+
+document.write(name +"<br>"); //sathya 
+document.write(myname +"<br>");//soma 
+
+
+
+</script>
+
+</body>
+
+</html>
+
