@@ -1,0 +1,162 @@
+
+lanaguage:
+----------
+
+to communicate with person
+  General languages:
+  ------------------
+  engilsh,hindi,telugu,tamil
+  
+ programming language:
+ ===================
+ to machine--->binary lanaguage--->o's 1's
+ 
+ ATM APPLICATIONS
+ CALCLULATOR APPLICATIONS
+ bILLING MACHINE APPLICATIONS
+ 
+ two types applications:
+ 
+ 1.standalone applications/desktop : antvirus, vlc media,acrobatic
+ 2.distributed application/network applications: facebook, instargram,watsup
+ 
+ 
+ pop                                                 oop
+ procedure oriented languages                object oriented programming
+ 
+ b,bcpl,c, cobolt                               c++,java,python,.Net
+ 
+ 
+ 
+ 1.security and performance
+ 
+ oopl                                                      oop(features)
+ 
+ object oriented programming language                    object oriented programming
+ 
+ oop------->canadian org(omg)
+ 
+ 1.inheritance
+ 2.polymorphism--------->performance
+ 3.abstraction
+ 4.encapsulation----------->security
+ 
+ 
+java:
+----
+
+java is object oriented programming language for the purpose of developing both standalone and distributed 
+applications.
+ 
+ father:james gosling 1995--->sun micro system
+ 
+ current version:jse 17
+ standard version: java se8
+ 
+ oracle corp: www.oracle.com
+ 
+ 3 editions:
+ 
+ jse: java standard edition:core java:
+ jee:java enterprise edition: advance java:
+ jme:java micro edition: mobile application
+ 
+ 
+ 
+1.platform independent
+2.garbage collection
+ 
+prerequisites to write java program:
+----------------------------------
+c program-----> c software-->turboC
+
+java---->java software---> jdk(java development kit)8
+
+www.oracle.com---->jdk8
+
+ 1.download software--
+ 2.install
+ 3.we need editors: notepad, notepad++, eclipse,netbaens, intelij
+ 4.write java program
+ 5.save the file
+ 6.compile the java program
+ 7.execute program
+ 
+ java--> 53 key words--->goto, constant
+ 
+ structure of java program:
+ ------------------------------
+ 
+ 
+ class Student
+ {
+ 
+ public static void main(String args[])
+ {
+ 
+ System.out.println("welcome to java");
+ }
+ }
+ 
+ 
+ 1. .java
+ 2. .class
+ 3, compilation
+ 4. execution
+ 5, jvm
+ 
+ 
+ 
+ .java
+ 
+ .class
+ 
+ compilation:
+ 
+                  compiler
+ .java------------------------------->.class
+ 
+ 
+ compilation: javac filename.java      javac Student
+ 
+ execution: java className
+ 
+ 
+ 
+ 
+ 1,platform independent: (WORA)--WRITE ONCE RUN ANYWHERE
+ ======================
+              PI
+ windows-------------------------------linux
+ .java
+ .class------------------------------->.class
+ 
+ .NET--->PLATFORM DEPENDENT
+ 
+ JAVA ORACLE                       .NET   MICROSOFT
+ 
+ 
+ .NET
+ 
+                    PD
+ WINDOWS-------------------------------------LINUX
+ 
+ .CLASS---------------------------->
+ 
+ 
+ 
+ 2.GARBAGE COLLECTION:---->performance
+ -------------------
+ 
+ int age= 23;       //4byts
+ 
+ 
+ 1000 variables----------->1000*4=4000bytes
+ 
+ 1 variable----->waste
+ 
+ garbage collector---> it will collect the unwanted memory space
+ 
+ 
+ c++:   we need to write prgrom
+ 

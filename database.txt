@@ -1,0 +1,61 @@
+
+show databases;
+/*cretae the database: create dtabase databasename*/
+create database socialp;
+
+use socialp;
+
+/* create table employee(columname datatype(size), columnanem datatype(size))*/
+
+create table Employee(empid int(3),ename varchar(20),esal int);
+
+alter table employee add column eadd varchar(25);
+alter table employee rename column esal to esalary;
+alter table employee modify ename varchar(30);
+alter table employee drop eadd;
+
+desc employee;
+desc emp;
+rename table employee to emp;
+
+
+
+
+/* insert into tablename valeus(123,'sathya',45200,'hyd')*/
+
+insert into employee values(126,'anil',95000);
+
+select empid,ename,esal from employee;
+
+select esal from employee;
+
+update employee set esal=1000 where empid=123;
+
+update employee set ename='keerthi';
+
+update employee set esal=6000 where empid=124;
+
+delete from employee where empid=123;
+
+delete from employee where ename='keerthi';
+
+delete from employee; 
+
+drop table emp;
+
+truncate table employee; 
+
+
+select * from employee;
+set autocommit=0;
+insert into employee values(127,'anil',95000);
+insert into employee values(128,'sathya',8000);
+insert into employee values(129,'vicky',45000);
+
+commit;
+
+delete from employee where empid=127;
+
+rollback;
+
+update employee set ename='sathya' where empid=129;

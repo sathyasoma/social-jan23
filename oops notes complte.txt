@@ -1,0 +1,595 @@
+
+
+***********
+oops features
+**********
+
+what is difference between oops and oopl?
+=======================================
+	 
+	 oops===> methodologies and features
+	 oopl==> object oriented language
+	 
+	  the methodologies which are used by oop langauges
+	  
+	  
+	  what are the oop features?
+	  -----------------
+	  we have 4 types of oops features
+	  
+	  Inheritance
+	  polymorphism---->performance
+	  abstraction
+	  Encapsulation---->security
+	 
+        class:
+		       have seen a car
+			   have seen a bus
+			   
+			   we cannot see a car, we can see types of cars, swift,creta,innova
+			   we cannot see a tree, we can see types of trees, -----
+			   
+			   class is a bluprint , it is collection of members with member functions
+			   class is logical entity.
+			   
+			   object; instance of a class is called object, allocating suficient memory space of objects which are 
+			   in class.
+			   every object has state and behaveiour.
+			   car has color state nd  behaviour driving
+			   
+			   object is the super classs class of all classses in java.
+			   java has 11 methods
+			   some are final, without final we cn change.
+			   
+
+
+==>class is a logical entity means like we can say it a blue print.
+      by using blue print we can create number of objects.
+	  
+	  eg: DNA ----------->to create one nd more
+
+def: class is a collection of varibles and member methods.
+
+eg:
+
+class Test{
+
+   //variables
+   //methods
+   //constructors
+   
+}
+
+
+what is Object?
+===============
+instance of a class.
+
+allocating sufficiant of memory space to class properties .
+
+object has state and behaviour
+
+eg:  dog has state=color: black
+     dog has behaviour= tail wagging
+	
+
+
+	 
+Inheritance:
+===========
+
+inheritance is concept of "aquring" properties from one class to another class
+                                                      parent to child
+                                                      base class to derived class
+
+
+--->>if we want to achive inheritance we need to use two keywords::  extends , implements													  
+	 
+	by using inheritance we will get performance but,if any one ask you you need to tell
+	      one term:: "code reusebility"
+		  
+		  lets say
+		  
+		  class Parent
+		  {
+		  
+		  //200 variables
+		  //1000 methods
+		  
+		  
+		  
+		  }
+   	    
+		 class A  extends Parent
+		 {
+		 
+		 //10 methods
+		 
+		 
+		 }
+	 
+	 
+	 *if  we want use those 200 variables and 1000 methods one way is: write all the code into A class
+	         if you do like that the line of code increasing and degrade the performance also
+	 
+	 *By using "extends" parent the properties whih have in parent all come to A. not physically logically 
+we get , we can call and use those properties. (we will get performance)
+
+
+types of inheritance:
+----------------------	 
+
+1. single level-------->one parent one child
+
+2. multi level----------->two parantes one child(grand parent-parent-child)
+
+3. hirarchial level------->one parent two childs
+
+
+4. hybrid level--->combination of any two inheritances
+
+****5. multiple level---->two childs one parent.
+
+eg:
+
+
+class Calculator{
+
+	 static void sub() {
+		int a=63;
+		int b=87;
+		System.out.println(a-b);
+	}
+
+	static void mul() {
+		int a=53;
+		int b=37;
+		System.out.println(a*b);
+	}
+	
+}
+
+ class A  {
+	 
+	static  void sum() {
+			int a=53;
+			int b=37;
+			System.out.println(a+b);
+			
+		}
+		
+}
+public class Test1 extends A  {
+	
+	static void div() {
+		int a=23;
+		int b=67;
+		System.out.println(a/b);
+	}
+	public static void main(String[] args) {
+		
+		//Test1.sub();
+		
+		
+	}
+
+}
+
+
+eg:
+===
+
+
+class Calci{
+	
+	void sum() {
+		System.out.println("i am from class class A");
+	}
+	
+	int display(int a, int b) {
+		return a-b;
+		
+	}
+}
+
+class B{
+	
+	void sum() {
+		System.out.println("i am from class class B");
+	}
+	
+	String print(String name) {
+		return name;
+		
+	}
+}
+public class Test3 extends A {
+	
+	public static void main(String[] args) {
+		
+		Test3 obj= new Test3();
+		
+		
+		obj.sum();
+		
+	}
+
+}
+
+
+class: 
+
+   class is a colletion of variables and member methods.
+   classes we have methods those methods we can call "concrete methods" or "implemented methods"
+
+
+abstraction:
+--------------
+abstraction is the process of hiding the data showing the functionality.
+
+eg:  watsup send button: we know the function how to use but we dont knoew the backend funtionality.
+
+abstract class is a collection of both abstract and non abstracct methods.
+
+by using abstraction we will get 0 to 100% security.
+
+
+
+abstract class Claculator{
+
+
+void sum(int a, int b){ //concrete or implemented method
+
+System.out.println("sum of two numbers :" (a+b));
+}
+
+// you need to provide implementation otherwise make your method as abstract
+       abstarct void sub(); //whenever you mke ur method abstract, u need to make your class abstrct 
+
+}
+
+class Test{
+
+void mul(int a, int b){ //concrete method
+
+System.lut.println("mul of two numbers is:" +(a*b));
+
+}
+public static void main(String args[]){
+
+  Test t= new Test();
+
+
+}
+
+}
+
+interfaace:
+========
+interface is a blueprint of a class.
+
+interface has only abstract methods
+
+by default interface has absract methds
+
+in interface we will get 100% abstraction
+
+
+
+
+
+class  to class--------extends
+class to interface -----implemnts
+interface to class -----implements
+interface to interface----->extends
+
+=====
+
+polymorphism:
+-------------
+poly means --many   morphism means---forms
+
+ eg: a man can do different tasks at a time
+     a man has different behaviours depends on situation
+	 
+	 in java we have + operator
+	 
+	 here this operator works has two ways
+	                    to add the two numbers =============12+13=25
+						 add the string to any values=========="hello"+12=hello12
+				**we can say opearator over loading.
+		to achive polymorphism we have two ways
+		   1. Method Overloading
+		   2.Method overriding
+		   
+Method Overloading:
+------------------
+method name is same but signature is different
+                          1.no of params different
+						  2.type of params diffrnt
+						  3.order of params dffrnt
+=
+
+eg:
+----
+
+
+
+
+class Claculator{
+
+
+public void add(int a, int b, int c)
+{
+System.out.println("addition of three int numbers :"+(a+b+c));
+
+}
+
+public void add(int a, int b)
+{
+System.out.println("addition of two int numbers :"+(a+b));
+
+}
+
+public void add(float a, float b)
+{
+System.out.println("addition of two float numbers :"+(a+b));
+
+}
+public void add(int a,float b)
+{
+System.out.println("addition of  int ,float numbers :"+(a+b));
+
+}
+public void add(float a, int b)
+{
+System.out.println("addition of  float, int numbers :"+(a+b));
+
+}
+public sttaic void main(String args[]){
+
+Calculator cal= new Calculator();
+
+cal.add(14,23); //this method check where we have both int params and then add thevalues
+cal.add(10,23.5f); //it will check the int,float value and add the both values 
+cal.add('a','d'); //type promotion //internally it will check the ASCII value but the type is dfrnt
+
+
+}
+
+}
+
+type promotion:
+-----------------
+less datatype can store large size of datatype --->forward it will go 
+            byte-->short==>int-->long-->
+			large dattatype cannot store small datatype
+			->(wrong)long-->int
+
+
+
+Method Overriding:
+----------------
+
+here method name is same but implementation is different
+
+the method method which we using in the parent if we are not satisfied with that then we can override and change
+  impleemention in the child class.
+  
+  
+  class OldTv{
+  
+     void screen(){
+	 
+	 System.out.println("lcd tv with low resolution display");
+	 }
+	 void sound(){
+	 
+	   System.out.println("the sound clarity is good");
+	 
+	 }
+  }
+public class NewTv extends OldTv{
+
+   @Override
+  void screen(){
+  
+      System.out.println("led tv with high resolutons"); 
+  }
+  
+  public static void main(String args[]){
+  
+  
+         NewTv nt= new NewTv();
+		 
+		 nt.screen();
+		 nt.sound();
+  }
+
+}
+
+
+
+This and super are two keywords.
+
+This:: this is a keyword to represent current class properties(variables,methods,constructors,object)
+
+super:: super is a keyword to represent parent classs properties(variables,methods,constructors)
+
+
+
+eg:
+---
+class Parent{
+ 
+ 
+ void m1(){
+ Sop("i am parent method");
+ }
+}
+
+class Test extends Parent{
+
+int salary=34000;
+
+void getSalary(int salary){
+  int salary=43000;
+   Syso("salry is :"+salary);
+   Syso(this.salary);
+   super.m1();
+}
+
+public static void main(String args[]){
+
+  Test t= new Test();
+  
+  t.getSalary();
+
+}
+}
+
+final:: 
+=====
+final is a kwyword it can be applied on three places variable, method, class , once we applied any one of these
+  the value wont change, it is fixed.
+  
+final:
+======
+class Parent{
+	final int age=88;
+	
+	void m1(int age) {
+		this.age=++age;
+		System.out.println("am parenty class m1 method :"+this.age);
+	}
+}
+
+public class Test extends Parent {
+	void m1(int age) {
+		this.age=--age;
+		System.out.println("am child class m1 method :"+this.age);
+	}
+public static void main(String[] args) {
+	
+	Test t= new Test();
+	t.m1(60);
+}
+}
+
+
+
+
+PACKAGES:
+==========
+packages are collection of classess, interfaces, and sub classes.
+
+the main purpose of pacakges are
+  easily maintance
+  providing acces protection
+  removes naming collisions
+ 
+* pacakge statement should be the first statment line in the source file.
+
+pacakges are two types:
+====================
+1.built in pacakges/system defined
+2.user defined pacakages
+
+
+1.Built in pacakges are defined by the sunmicro systems also called pre defined pacakages
+
+          java.lang.System(default pacakge)
+   java==pacakge
+   lang===>sub package
+   System==>class
+   
+   we have around 6000 pre defined packages in java API.
+   whenever we need use import from the libreary. just import the pacakge and use functionality.
+   
+   
+  java.lang, io, awt, sql, .......
+  
+  how to access from pacjkge to another pacakage:
+  -------------------------------------------
+     three ways to access one pacakage to another pacakage.
+	 
+	 1.import pacakge.*    (all the classs,interfaces of this pacakge will imported except sub pacakges)
+     
+     2.import package.classname  (only that pacakge related class can be access)
+
+     3. fully qualified name   (only declared class will be accesed)
+	 
+  
+  userdefined:
+  ==========
+  we can defien our own pacakges to maintaine our projects and we can find easy way
+  
+  how to create pacakge:
+
+ 1. write the java program with pacakge name.
+       compile:  javac -d . filename.java
+	                aftre compiling one given pacakge folder will created in the we have our class file.
+					
+ 2. execute the program by using complete pacakge name with class name
+       execte :    java packagename.classname
+	    
+
+Access Modifiers:
+=================
+Access modifiers are basically keywords in java .
+ in java we have also "non-access " modifiers such as static, abstract, syncgronized, native, volatile, transient
+ these are the non-access modifiers in java.
+to modify the scope or accessing 
+
+we have 
+
+public , protected, default, private in java
+
+
+eg: i creatted two packages  
+   
+
+com.kt.pack1
+
+class Test{
+
+public statikc void main(String args[]){
+
+
+}
+}
+
+
+com.kt.pack2
+
+class Hacker{
+
+
+public static void main(String args[]){
+
+//if i want to crete object of Test class we have to import the pack1 into pack2
+// that class modifier is public tahts y we can access any where.
+
+Test t= new Test();
+}
+
+}
+
+
+
+Encapsulation:
+================
+binding / grouping data memeberes with member methods
+                    variables with corresponding methods
+					
+					
+					class Student{
+					
+					  private int sid;
+					  private String sname;
+					  
+					  
+					  
+					  //setters and getters
+					
+					}

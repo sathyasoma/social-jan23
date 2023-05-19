@@ -1,0 +1,102 @@
+					
+***************
+Strings
+***************				
+					
+	
+	String , StringBuffer, StringBuilder
+	------------------------------------
+	
+	String is collection of charecters or group of charecters
+	
+	String is predefined class present in ---java.lang package
+	String is  non primitive datatype---
+	eg:  "Divya" --->store in double quotes
+	
+	String orgName="capgemini";
+	
+	
+	there is two ways to create the object in String:
+	-----------------------------
+	
+	1. String literal way
+	
+	    String str="soma";
+		
+	2. By new keyword
+	
+	String str= new String("soma");
+	
+	
+	String is immutable (final)
+	   once we assign the value it is fixed wont changed 
+	
+	
+	eg:
+	====
+	
+	
+	
+	String name="capgemini"; //immutable
+	String name1="capgemini";
+	
+	name.concat("India");  //capgemini india   //gc
+	
+	*but in this case string is immutable the value wont change.
+	      
+		  
+	Sop(name.equals(name1));  // true/false  //equals method
+	
+	Sop(name==name1);  //references are reffering values
+	
+	**String class "equals" method will check the values are same or not
+	** == operater will check the address of the objects pointing same or not
+	
+	
+	===>heap---->scp
+	          whenever we store the liter way the values will be stored in the heap in SCP area
+			      in SCP duplicates are not allowed.
+				                    for that we can get the performanca low memoryspace
+	
+	2.By using new Keyword:
+	========================
+	
+	String str= new String("divya");  
+	
+	String str1= new String("divya");
+	
+	*System.out.println(str.equals(str1));  //true/false
+	*System.out.println(str==str1);  //true/false
+
+
+         ** we know equals method will check the values 
+		 ** here whenever we add new keyword seperate object will be created in HEAP area and scp.
+		          if scp already there not created in the scp.
+		* HEAP area duplicates are allowed why means every time new object will created .
+		**== check the refrence are reffering different objects thats why it is false.
+		
+StringBuilder:
+==============
+String buffer is mutable, we can change it
+
+StringBuffer sb= new StringBuffer("capgemini");
+StringBuffer sb1= new StringBuffer("capgemini");
+
+
+System.out.println(sb.equals(sb1));  //true/false
+System.out.println(sb==sb1);  //true/false
+	
+	**here equals method will get false how means in this case equals method is from OBJECT class 
+	     b asically equals method is from object class,  but String class can changed the implementation
+		              thats why in String class equals method will checkedd values.
+					  
+	**== will get false
+	
+	**StrungBuilder methods are not synchronized.
+	
+	** StringBuffer methods are synchonized
+	
+	open CMD:; javap java.lang.StringBuilder
+StringBuffer:
+----------------
+StringBuffer is Synchronized
